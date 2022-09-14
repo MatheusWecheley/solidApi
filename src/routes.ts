@@ -1,9 +1,10 @@
+import { createClientFactory } from './useCases/ClientUseCase/CreateClientFactory';
 import { response, Router } from "express";
 
 const router = Router();
 
 router.post('/users', (request, response) => {
-    return response.status(201)
-});
+    createClientFactory().handle(request, response)
+ });
 
 export { router };
