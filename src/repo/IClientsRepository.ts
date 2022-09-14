@@ -1,7 +1,7 @@
-import { Client } from './../entities/Client';
+import { IClient } from './../entities/Client';
 
 
 export interface IClientsRepository {
-    findByName(name: string): Promise<Client>;
-    save(client: Client): Promise<void>;
+    findByName(name: string): Promise<IClient>;
+    save(client: IClient): Promise<void>;
 }

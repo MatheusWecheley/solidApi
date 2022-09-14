@@ -1,9 +1,10 @@
 import express from 'express';
+import appConfig from './config/config';
 import { router } from './routes';
 
 const app = express();
 
-app.use(express.json());
-app.use(router)
+appConfig(app);
+
 
 export { app };
