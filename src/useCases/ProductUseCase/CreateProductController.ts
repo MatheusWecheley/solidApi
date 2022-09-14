@@ -20,7 +20,7 @@ export class CreateProductController {
             });
             return response.json(`Product ${name} created success!`);
         } catch (error) {
-            return response.json(error);
+            return response.json({err: `Not possible create ${name}.`});
         }
     }
 }
