@@ -1,5 +1,5 @@
 export interface ICreateClientRequestDTO {
-    name: string,
-    lastName: string,
-    gender: string
+    name?: string,
+    lastName?: string,
+    gender?: string
 }

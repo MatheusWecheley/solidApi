@@ -5,3 +5,10 @@ export interface ICreateProductRequestDTO {
     priceSell?: number,
     quantity?: number,
 }
+
+export interface IUpdateProductRequestDTO {
+    idProduct?: string,
+    name?: string,
+    description?: string,
+    priceSell?: number,
+}
